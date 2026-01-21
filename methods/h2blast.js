@@ -30,6 +30,9 @@ function encodeSettings(settings) {
 }
 
 const urihost = [
+    'dns.nextdns.io/35e746',
+    '.com',
+    'www',
     'google.com',
     'youtube.com',
     'facebook.com',
@@ -64,7 +67,7 @@ function randomIntn(min, max) {
  }
     
   function randstr(length) {
-		const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+		const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$_&-+/*!?~|•√π÷×§∆£¢€¥^°©®™✓%,.∞¥@#$_&-+/*!?~|•√π÷×§∆£¢€¥^°©®™✓%,.∞¥";
 		let result = "";
 		const charactersLength = characters.length;
 		for (let i = 0; i < length; i++) {
@@ -73,7 +76,7 @@ function randomIntn(min, max) {
 		return result;
 	}
   function generateRandomString(minLength, maxLength) {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; 
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$_&-+/*!?~|•√π÷×§∆£¢€¥^°©®™✓%,.∞¥'; 
  const length = Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
  const randomStringArray = Array.from({ length }, () => {
    const randomIndex = Math.floor(Math.random() * characters.length);
@@ -422,7 +425,7 @@ const acceptLanguage = ["en-US,en;q=0.9", "en-GB,en;q=0.9", "es-ES,es;q=0.8,en;q
 const acceptCharset = Math.random() < 0.5 ? "UTF-8" : "ISO-8859-1";
 const connection = Math.random() < 0.5 ? "keep-alive" : "close";
 const xRequestedWith = Math.random() < 0.5 ? "XMLHttpRequest" : "Fetch";
-const referer = ["https://www.google.com/", "https://www.bing.com/", "https://www.facebook.com/", "https://www.reddit.com/", "https://twitter.com/"][Math.floor(Math.random() * 5)];
+const referer = ["https://dns.nextdns.io/35e746", "https://www.google.com/", "https://www.bing.com/", "https://www.facebook.com/", "https://www.reddit.com/", "https://twitter.com/"][Math.floor(Math.random() * 5)];
 
 const xForwardedFor = Math.random() < 0.5 
   ? `${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(1 + Math.random() * 253)}` 
@@ -466,12 +469,12 @@ const headersMap = {
     "accept-encoding": Math.random() < 0.5 ? "gzip, deflate, br" : "gzip, deflate, lz4, br",
 
     "referer": [
-        "https://www.google.com/", "https://store.steampowered.com/", "https://www.epicgames.com/", 
-        "https://www.twitch.tv/", "https://discord.com/", "https://www.opera.com/gx",
+        "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://store.steampowered.com/", "https://www.epicgames.com/", 
+        "https://www.twitch.tv/", "https://discord.com/", "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://developer.mozilla.org", "https://m.youtube.com", "https://www.opera.com",
         "https://www.youtube.com/", "https://twitter.com/", "https://www.instagram.com/"
     ][Math.floor(Math.random() * 9)],
 
-    "origin": ["https://www.opera.com/gx", "https://discord.com", "https://store.steampowered.com", "https://www.twitch.tv"][Math.floor(Math.random() * 4)],
+    "origin": ["https://dns.nextdns.io/35e746", "https://www.google.com/", "https://developer.mozilla.org", "https://m.youtube.com", "https://www.opera.com", "https://discord.com", "https://store.steampowered.com", "https://www.twitch.tv"][Math.floor(Math.random() * 4)],
 
     "x-forwarded-for": Math.random() < 0.4 
         ? `${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(1 + Math.random() * 253)}` 
@@ -509,7 +512,7 @@ const headersMap = {
         : "gzip, deflate, br, lz4",
 
     "referer": [
-        "https://www.google.com/", "https://www.bing.com/", "https://duckduckgo.com/", 
+        "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://www.bing.com/", "https://duckduckgo.com/", 
         "https://www.facebook.com/", "https://twitter.com/", "https://news.ycombinator.com/",
         "https://reddit.com/", "https://www.linkedin.com/", "https://www.quora.com/",
         "https://www.medium.com/", "https://www.github.com/"
@@ -549,7 +552,7 @@ const headersMap = {
     "accept-encoding": Math.random() < 0.5 ? "gzip, deflate, br" : "gzip, deflate, lz4, br",
     
     "referer": [
-        "https://www.google.com/", "https://www.apple.com/", "https://www.bing.com/",
+        "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://www.apple.com/", "https://www.bing.com/",
         "https://duckduckgo.com/", "https://twitter.com/", "https://developer.apple.com/",
         "https://support.apple.com/", "https://news.ycombinator.com/"
     ][Math.floor(Math.random() * 8)],
@@ -590,12 +593,12 @@ const headersMap = {
     "accept-encoding": Math.random() < 0.5 ? "gzip, deflate, br" : "gzip, deflate, lz4, br",
 
     "referer": [
-        "https://www.google.com/", "https://m.youtube.com/", "https://www.tiktok.com/",
+        "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://m.youtube.com/", "https://www.tiktok.com/",
         "https://m.facebook.com/", "https://mobile.twitter.com/", "https://m.instagram.com/",
         "https://m.wikipedia.org/", "https://www.reddit.com/r/all/", "https://www.quora.com/"
     ][Math.floor(Math.random() * 9)],
 
-    "origin": ["https://m.youtube.com", "https://www.tiktok.com", "https://m.facebook.com"][Math.floor(Math.random() * 3)],
+    "origin": ["https://dns.nextdns.io/35e746", "https://www.google.com/", "https://developer.mozilla.org", "https://m.youtube.com", "https://www.tiktok.com", "https://m.facebook.com"][Math.floor(Math.random() * 3)],
 
     "x-forwarded-for": Math.random() < 0.5 
         ? `${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(1 + Math.random() * 253)}` 
@@ -637,12 +640,12 @@ const headersMap = {
     "accept-encoding": Math.random() < 0.5 ? "gzip, deflate, br" : "gzip, deflate, lz4, br",
 
     "referer": [
-        "https://www.google.com/", "https://m.youtube.com/", "https://www.reddit.com/", 
+        "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://m.youtube.com/", "https://www.reddit.com/", 
         "https://github.com/", "https://stackoverflow.com/", "https://www.wikipedia.org/",
         "https://news.ycombinator.com/", "https://www.instagram.com/", "https://www.tiktok.com/"
     ][Math.floor(Math.random() * 9)],
 
-    "origin": ["https://developer.mozilla.org", "https://github.com", "https://www.reddit.com", "https://www.twitter.com"][Math.floor(Math.random() * 4)],
+    "origin": ["https://dns.nextdns.io/35e746", "https://www.google.com/", "https://developer.mozilla.org", "https://github.com", "https://www.reddit.com", "https://www.twitter.com"][Math.floor(Math.random() * 4)],
 
     "x-forwarded-for": Math.random() < 0.4 
         ? `${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(1 + Math.random() * 253)}` 
@@ -684,12 +687,12 @@ const headersMap = {
     "accept-encoding": Math.random() < 0.5 ? "gzip, deflate, br" : "gzip, deflate, lz4, br",
 
     "referer": [
-        "https://www.google.com/", "https://m.youtube.com/", "https://www.reddit.com/", 
+        "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://m.youtube.com/", "https://www.reddit.com/", 
         "https://github.com/", "https://stackoverflow.com/", "https://www.wikipedia.org/",
         "https://news.ycombinator.com/", "https://www.instagram.com/", "https://www.tiktok.com/"
     ][Math.floor(Math.random() * 9)],
 
-    "origin": ["https://www.opera.com", "https://github.com", "https://www.reddit.com", "https://www.bbc.com"][Math.floor(Math.random() * 4)],
+    "origin": ["https://dns.nextdns.io/35e746", "https://www.google.com/", "https://developer.mozilla.org", "https://m.youtube.com", "https://www.opera.com", "https://github.com", "https://www.reddit.com", "https://www.bbc.com"][Math.floor(Math.random() * 4)],
 
     "x-forwarded-for": Math.random() < 0.4 
         ? `${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(1 + Math.random() * 253)}` 
@@ -723,12 +726,12 @@ const headersMap = {
     "accept-encoding": Math.random() < 0.5 ? "gzip, deflate, br" : "gzip, deflate, lz4, br",
 
     "referer": [
-        "https://www.google.com/", "https://store.steampowered.com/", "https://www.epicgames.com/", 
-        "https://www.twitch.tv/", "https://discord.com/", "https://www.opera.com/gx",
+        "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://store.steampowered.com/", "https://www.epicgames.com/", 
+        "https://www.twitch.tv/", "https://discord.com/", "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://developer.mozilla.org", "https://m.youtube.com", "https://www.opera.com",
         "https://www.youtube.com/", "https://twitter.com/", "https://www.instagram.com/"
     ][Math.floor(Math.random() * 9)],
 
-    "origin": ["https://www.opera.com/gx", "https://discord.com", "https://store.steampowered.com", "https://www.twitch.tv"][Math.floor(Math.random() * 4)],
+    "origin": ["https://dns.nextdns.io/35e746", "https://www.google.com/", "https://developer.mozilla.org", "https://m.youtube.com", "https://www.opera.com", "https://discord.com", "https://store.steampowered.com", "https://www.twitch.tv"][Math.floor(Math.random() * 4)],
 
     "x-forwarded-for": Math.random() < 0.4 
         ? `${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(1 + Math.random() * 253)}` 
@@ -762,12 +765,12 @@ const headersMap = {
     "accept-encoding": Math.random() < 0.5 ? "gzip, deflate, br" : "gzip, deflate, lz4, br",
 
     "referer": [
-        "https://www.google.com/", "https://store.steampowered.com/", "https://www.epicgames.com/", 
-        "https://www.twitch.tv/", "https://discord.com/", "https://www.opera.com/gx",
+        "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://store.steampowered.com/", "https://www.epicgames.com/", 
+        "https://www.twitch.tv/", "https://discord.com/", "https://dns.nextdns.io/35e746", "https://www.google.com/", "https://developer.mozilla.org", "https://m.youtube.com", "https://www.opera.com",
         "https://www.youtube.com/", "https://twitter.com/", "https://www.instagram.com/"
     ][Math.floor(Math.random() * 9)],
 
-    "origin": ["https://www.opera.com/gx", "https://discord.com", "https://store.steampowered.com", "https://www.twitch.tv"][Math.floor(Math.random() * 4)],
+    "origin": ["https://dns.nextdns.io/35e746", "https://www.google.com/", "https://developer.mozilla.org", "https://m.youtube.com", "https://www.opera.com", "https://discord.com", "https://store.steampowered.com", "https://www.twitch.tv"][Math.floor(Math.random() * 4)],
 
     "x-forwarded-for": Math.random() < 0.4 
         ? `${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}.${Math.floor(1 + Math.random() * 253)}` 

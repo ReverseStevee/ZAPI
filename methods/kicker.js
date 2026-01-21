@@ -77,7 +77,7 @@ function randomPath() {
 }
 
 function randstr(length) {
-    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$_&-+/*!?~|•√π÷×§∆£¢€¥^°©®™✓%,.∞¥";
     return Array.from({ length }, () => characters.charAt(Math.floor(Math.random() * characters.length))).join('');
 }
 

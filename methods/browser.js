@@ -446,7 +446,7 @@ function getNextProxy(arr) {
 }
 
 function randstr(length) {
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$_&-+/*!?~|•√π÷×§∆£¢€¥^°©®™✓%,.∞¥";
     let result = "";
     for (let i = 0; i < length; i++) {
         result += chars[Math.floor(Math.random() * chars.length)];
@@ -455,7 +455,7 @@ function randstr(length) {
 }
 
 function generateRandomString(minLength, maxLength) {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$_&-+/*!?~|•√π÷×§∆£¢€¥^°©®™✓%,.∞¥';
     const length = Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
     let result = '';
     for (let i = 0; i < length; i++) {
